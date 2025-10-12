@@ -1,0 +1,15 @@
+# OSX specific generated files
+.DS_Store
+
+#VS Code
+.vscode/*
+
+#VS Code WorkSpace
+*.code-workspace
+
+# .venv Python
+.venv/*
+
+# __pycache__ and .pyc files
+__pycache__/
+*.pyc
