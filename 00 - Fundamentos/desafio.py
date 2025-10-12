@@ -1,4 +1,6 @@
-menu = f"""
+"""BASIC BANK SYSTEM (DIO TRAINING)"""
+# pylint: disable=invalid-name
+MENU = f"""
 {'OPTIONS'.center(50, '=')}
 [D] Deposit
 [W] Withdraw
@@ -16,7 +18,7 @@ withdraw_count = 0
 
 while True:
 
-    option = input(menu)
+    option = input(MENU)
 
     if option.lower() == "d":
         amount = float(input("How much you will be depositing: "))
@@ -43,7 +45,7 @@ while True:
         elif exceeded_limit:
             print("FAIL! Amount Exceeded.")
 
-        elif exceeded_wdithdraw_count:
+        elif exceeded_withdraw_count:
             print("FAIL! Exceed Number of Withdraws.")
 
         elif amount > 0:
