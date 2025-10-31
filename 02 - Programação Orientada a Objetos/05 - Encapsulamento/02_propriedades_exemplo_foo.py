@@ -17,7 +17,9 @@ class Foo:
 
 foo = Foo(10)
 print(foo.x)
+
 del foo.x
 print(foo.x)
+
 foo.x = 10
 print(foo.x)
